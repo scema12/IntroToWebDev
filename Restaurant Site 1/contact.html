@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<!--
+    Name: Cameron Proux 
+    Date Created: April 25, 2022
+    Most recent revision: April 25, 2022
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>The Hungry Pub</h1>
+        </header>
+    <!-- Restaurant name -->
+    <nav>
+        <hr>
+        <p><a href="index.html">Home</a>&emsp;<a href="menu.html">Menu</a>&emsp;<a href="contact.html">Contact Us</a></p>
+        <hr>
+    </nav>    
+    <!-- Page navigations -->   
+        <form action="submit" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div><br>
+        <div>    
+            <label for="emailAddr">Email:</label>
+            <input type="email" id="emailAddr" name="emailAddr">
+        </div><br>
+        <div>   
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div><br>
+        <div>
+            <label for="reason">Reason for Inquiry:</label>
+            <select id="reason" name="reason">
+                <option value="catering" selected>Catering</option>
+                <option value="private">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </div><br>
+        <div>    
+            <label for="info">Additional Information:</label>
+			<textarea id="info" rows="5"></textarea>
+        </div><br>
+        <div>    
+            <label for="choice1">Have you been to the restaurant?</label>
+            <input type="radio" id="choice1" name="been" value="no" checked="">
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="been" value="yes">
+            <label for="choice2">Yes</label>
+        </div><br> 
+        <div>   
+            <label for="monday">Best days to contact you:</label>
+            <input type="checkbox" id="monday" name="contactDay" value="monday">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="contactDay" value="tuesday">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="contactDay" value="wednesday">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="contactDay" value="thursday">
+            <label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="contactDay" value="friday">
+            <label for="friday">F</label>
+        </div><br>
+			<input type="submit" name="submit" value="Send Request">
+        </form>
+        <!-- multiple form boxs -->
+        <hr>
+        <p>
+            <strong>42 Lorenzo Street, Alabama, 34253</strong>
+        </p>
+        <p>
+            <strong>902-534-3400</strong>
+        </p>
+        <!-- address and phone number -->
+    </body> 
+</html>
